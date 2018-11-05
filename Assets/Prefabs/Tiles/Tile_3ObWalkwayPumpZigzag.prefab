@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 33011774597411866}
   - component: {fileID: 23407170328030400}
   - component: {fileID: 65998767663872170}
+  - component: {fileID: 114846818170479844}
   m_Layer: 0
   m_Name: Tombstone_02
   m_TagString: Obstacle
@@ -703,6 +704,17 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1638078205048118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b946ad3a5cdcee94a88bf84d375cb7cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114846818170479844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535163345725812}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b946ad3a5cdcee94a88bf84d375cb7cf, type: 3}
