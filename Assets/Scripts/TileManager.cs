@@ -7,7 +7,7 @@ public class TileManager : MonoBehaviour
     public GameObject[] tilePrefabs; // Tiles the manager will spawn
     private Transform playerTransform;
     private float spawnZ = -20.0f;
-    private float tileLength = 10.0f;
+    private float tileLength = 11.0f;
     private float safeZone = 50.0f;
     private int amnTilesOnScreen = 7;
     private int lastPrefabIndex = 0;

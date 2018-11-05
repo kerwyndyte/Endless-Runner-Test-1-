@@ -6,6 +6,7 @@ public class PlayerMotor : MonoBehaviour {
 
     private CharacterController controller;
     private Vector3 moveVector;
+    Animator player_animator;
 
     public float speed = 5.0f;
     public float newSpeed;
@@ -23,31 +24,42 @@ public class PlayerMotor : MonoBehaviour {
     {
 
         controller = GetComponent<CharacterController>();
+        player_animator = GetComponent<Animator>();
         		
 	}
 
     // Update is called once per frame
     void Update()
     {
+        
         if (Time.time < animationDuration)
         {
             controller.Move(Vector3.forward * speed * Time.deltaTime);
             return;
         }
         moveVector = Vector3.zero; //Reset Value 
+        bool isJumpingPressed = Input.GetKey("space");
+        player_animator.SetBool("IsJumping", isJumpingPressed);
         if (controller.isGrounded)
         {
             verticalVelocity = -0.5f;
-
-            if (Input.GetKeyDown(KeyCode.Space))
+            
+            /*if (Input.GetKeyDown(KeyCode.Space))
             {
-                verticalVelocity = jump; //replace with jump animation
-            }
+                isJumpingPressed = true;
+                player_animator.SetBool("IsJumping", isJumpingPressed);
+                //verticalVelocity = jump; //replace with jump animation
+            }*/
         }
         else
         {
-            verticalVelocity = -gravity * Time.deltaTime;
+            
+            //player_animator.SetBool("IsJumping", false);
+            //verticalVelocity = -gravity * Time.deltaTime;
         }
+
+        
+
         // X - Left and Right
         moveVector.x = Input.GetAxisRaw("Horizontal") * speed;
 
@@ -73,13 +85,13 @@ public class PlayerMotor : MonoBehaviour {
     // Power Ups
     public void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Speedup")
+        if (other.tag == "Speedup")
         {
             speed = 5.5f;
             StartCoroutine(SpeedTimer(5));
         }
 
-        if (other.name == "Obstacle")
+        if (other.tag == "Obstacle")
         {
             if(myFuncWasCalled)
             {
