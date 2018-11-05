@@ -37,31 +37,37 @@ public class PlayerMotor : MonoBehaviour {
             controller.Move(Vector3.forward * speed * Time.deltaTime);
             return;
         }
-        moveVector = Vector3.zero; //Reset Value 
-        bool isJumpingPressed = Input.GetKey("space");
-        player_animator.SetBool("IsJumping", isJumpingPressed);
+        moveVector = Vector3.zero; //Reset Value
+        if(Input.GetMouseButtonDown(0))
+        {
+            bool isJumpingPressed = (Input.mousePosition.y >= Screen.height / 2);
+            if(isJumpingPressed)
+             player_animator.SetTrigger("IsJumping");
+            //player_animator.SetBool("IsJumping",);
+        }
+        
         if (controller.isGrounded)
         {
             verticalVelocity = -0.5f;
             
-            /*if (Input.GetKeyDown(KeyCode.Space))
-            {
-                isJumpingPressed = true;
-                player_animator.SetBool("IsJumping", isJumpingPressed);
-                //verticalVelocity = jump; //replace with jump animation
-            }*/
+            
         }
         else
         {
-            
-            //player_animator.SetBool("IsJumping", false);
-            //verticalVelocity = -gravity * Time.deltaTime;
+            return;            
         }
 
         
 
         // X - Left and Right
         moveVector.x = Input.GetAxisRaw("Horizontal") * speed;
+        if (Input.GetMouseButton(0))
+        {
+            if (Input.mousePosition.x > Screen.width / 2)
+                moveVector.x = -5;
+            else
+                moveVector.x = 5;
+        }
 
         // Y - Up and Down
         moveVector.y = verticalVelocity; //replace with jump animation
