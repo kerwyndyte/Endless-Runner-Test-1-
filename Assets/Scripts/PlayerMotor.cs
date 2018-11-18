@@ -10,7 +10,6 @@ public class PlayerMotor : MonoBehaviour {
 
     public float speed = 5.0f;
     public float newSpeed;
-    private float jump = 100.0f;
     private float verticalVelocity = 0.0f;
     private float gravity = 120.0f;
     private float animationDuration = 2.0f;
@@ -43,7 +42,7 @@ public class PlayerMotor : MonoBehaviour {
             bool isJumpingPressed = (Input.mousePosition.y >= Screen.height / 2);
             if(isJumpingPressed)
              player_animator.SetTrigger("IsJumping");
-            //player_animator.SetBool("IsJumping",);
+            
         }
         
         if (controller.isGrounded)
@@ -111,6 +110,11 @@ public class PlayerMotor : MonoBehaviour {
                 speed--;
                 StartCoroutine(ObstacleTimer(3));
             }
+            
+        }
+
+        if (other.tag == "Enemy")
+        {
             
         }
     }

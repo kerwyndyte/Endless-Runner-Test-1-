@@ -9,7 +9,7 @@ public class Score : MonoBehaviour
     private int difficultyLevel = 1;
     private int maxDifficultyLevel = 10;
     private int scoreToNextLevel = 20;
-
+    
     public Text timeText;
 
 	// Use this for initialization
@@ -39,6 +39,7 @@ public class Score : MonoBehaviour
         scoreToNextLevel *= 2;
         difficultyLevel++;
         GetComponent<PlayerMotor>().SetSpeed(difficultyLevel);
+        GameObject.Find("reaper_ting").GetComponent<ReaperMotor>().SetSpeed(difficultyLevel);
         //Level 1 Speed = 5
         //Level 2 Speed = 6
         //Level 3 Speed = 7 etc
