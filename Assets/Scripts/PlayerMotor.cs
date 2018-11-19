@@ -6,6 +6,7 @@ public class PlayerMotor : MonoBehaviour {
 
     private CharacterController controller;
     private Vector3 moveVector;
+    private Vector3 startTouchPosition, endTouchPosition;
     Animator player_animator;
 
     public float speed = 5.0f;
@@ -15,7 +16,7 @@ public class PlayerMotor : MonoBehaviour {
     private float animationDuration = 2.0f;
 
     private bool myFuncWasCalled;
-
+    private bool isJumpingPressed = false;
 
 
     // Use this for initialization
@@ -37,6 +38,9 @@ public class PlayerMotor : MonoBehaviour {
             return;
         }
         moveVector = Vector3.zero; //Reset Value
+
+        //SwipeCheck();
+
         if(Input.GetMouseButtonDown(0))
         {
             bool isJumpingPressed = (Input.mousePosition.y >= Screen.height / 2);
@@ -44,7 +48,7 @@ public class PlayerMotor : MonoBehaviour {
              player_animator.SetTrigger("IsJumping");
             
         }
-        
+
         if (controller.isGrounded)
         {
             verticalVelocity = -0.5f;
@@ -54,9 +58,7 @@ public class PlayerMotor : MonoBehaviour {
         else
         {
             return;            
-        }
-
-        
+        }        
 
         // X - Left and Right
         moveVector.x = Input.GetAxisRaw("Horizontal") * speed;
@@ -67,6 +69,11 @@ public class PlayerMotor : MonoBehaviour {
             else
                 moveVector.x = 5;
         }
+
+        /*if (Input.GetTouch(0).position.x > Screen.width / 2)
+            moveVector.x = -5;
+        else
+            moveVector.x = 5;*/
 
         // Y - Up and Down
         moveVector.y = verticalVelocity; //replace with jump animation
@@ -86,6 +93,31 @@ public class PlayerMotor : MonoBehaviour {
 
 		
 	}
+     
+
+    
+    /*private void SwipeCheck()
+    {
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            startTouchPosition = Input.GetTouch(0).position;
+
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+            endTouchPosition = Input.GetTouch(0).position;
+
+        if (endTouchPosition.y > startTouchPosition.y)
+        {
+            bool isJumpingPressed = true;
+            if (isJumpingPressed)
+            {
+                player_animator.SetTrigger("IsJumping");
+            }
+            
+        }
+                
+    }*/
+       
+
+
 
     // Power Ups
     public void OnTriggerEnter(Collider other)
