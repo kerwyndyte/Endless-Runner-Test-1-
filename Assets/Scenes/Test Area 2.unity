@@ -179,7 +179,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &405701477
+--- !u!1001 &630417582
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -310,7 +310,7 @@ Animator:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1431697497}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 032a6307abaa866488e3f489e7833845, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 7db077b61da4e7b4ea1df34072641080, type: 3}
   m_Controller: {fileID: 9100000, guid: 0f51bb9111ea9a04b8e7256a0bd52264, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0

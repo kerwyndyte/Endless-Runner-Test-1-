@@ -9,7 +9,7 @@ public class PlayerMotor : MonoBehaviour {
     private Vector3 startTouchPosition, endTouchPosition;
     Animator player_animator;
 
-    public float speed = 5.0f;
+    public float speed = 3.0f;
     public float newSpeed;
     private float verticalVelocity = 0.0f;
     private float gravity = 120.0f;
@@ -155,7 +155,7 @@ public class PlayerMotor : MonoBehaviour {
     IEnumerator SpeedTimer(float time)
     {
         yield return new WaitForSeconds(5);
-        speed = 5.0f;
+        speed = 3.5f;
     }
 
     IEnumerator ObstacleTimer(float time)
@@ -179,6 +179,6 @@ public class PlayerMotor : MonoBehaviour {
     public void SetSpeed(float modifier)
     {
         myFuncWasCalled = true;
-        newSpeed = 5.0f + modifier;
+        newSpeed = 3.0f + modifier;
     }
 }

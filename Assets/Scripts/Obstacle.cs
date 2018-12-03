@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour {
 
-    //private GameObject player = GameObject.FindGameObjectWithTag("Player");
-
 	// Use this for initialization
 	void Start () {
 
@@ -19,9 +17,8 @@ public class Obstacle : MonoBehaviour {
 
 	private void OnTriggerEnter (Collider other)
 	{
-		if (other.tag == "Player") 
+		if (other.name == "Player") 
 		{
-            other.GetComponent<LifeCount>().lives--;
 			Destroy (gameObject);
 		}
 	}

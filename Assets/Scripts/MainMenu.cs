@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour {
+public class MainMenu : MonoBehaviour
+{
+    public void PlayGame()
+    {
+        StartCoroutine(WaitforFade(4));
+    }
 
-	public void PlayGame ()
-	{
-		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
-	}
+    IEnumerator WaitforFade(float time)
+    {
+        yield return new WaitForSeconds(4);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
-	public void QuitGame()
+	
+
+    public void QuitGame()
 	{
 		Application.Quit ();
 	}

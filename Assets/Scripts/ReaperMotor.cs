@@ -6,7 +6,7 @@ public class ReaperMotor : MonoBehaviour {
     private CharacterController controller;
     private Vector3 moveVector;
 
-    public float speed = 5.0f;
+    public float speed = 3.0f;
     public float newSpeed;
     private float animationDuration = 2.0f;
 
@@ -14,6 +14,7 @@ public class ReaperMotor : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        
         controller = GetComponent<CharacterController>();
        
     }
@@ -45,6 +46,6 @@ public class ReaperMotor : MonoBehaviour {
     public void SetSpeed(float modifier)
     {
         myFuncWasCalled = true;
-        newSpeed = 5.0f + modifier;
+        newSpeed = 3.0f + modifier;
     }
 }

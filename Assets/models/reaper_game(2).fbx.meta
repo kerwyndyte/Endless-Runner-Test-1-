@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: 9e06fed5a88ddee4aa9c96c6bbfbc018
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Head_C
+    100002: pPlane2
+    100004: pPlane3
+    100006: pSphere1
+    100008: pSphere2
+    100010: reaper_body1
+    100012: reaper_body2
+    100014: //RootNode
+    100016: transform1
+    100018: transform2
+    400000: Head_C
+    400002: pPlane2
+    400004: pPlane3
+    400006: pSphere1
+    400008: pSphere2
+    400010: reaper_body1
+    400012: reaper_body2
+    400014: //RootNode
+    400016: transform1
+    400018: transform2
+    2100000: aiStandardSurface7
+    2100002: aiStandardSurface8
+    2100004: Default_Material
+    2100006: aiStandardSurface5
+    2100008: aiStandardSurface6
+    2300000: Head_C
+    2300002: pPlane3
+    2300004: pSphere1
+    2300006: pSphere2
+    2300008: reaper_body1
+    3300000: Head_C
+    3300002: pPlane3
+    3300004: pSphere1
+    3300006: pSphere2
+    3300008: reaper_body1
+    4300000: pSphere1
+    4300002: pSphere2
+    4300004: Head_C
+    4300006: reaper_body1
+    4300008: pPlane3
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: reaper_body2
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: transform1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: reaper_game(2)(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere1
+      parentName: reaper_game(2)(Clone)
+      position: {x: 0.016568191, y: 0.040134184, z: -0.009182187}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 0.7307706, y: 0.7307706, z: 0.7307706}
+    - name: pSphere2
+      parentName: reaper_game(2)(Clone)
+      position: {x: 0.016568191, y: 0.040134184, z: 0.0090118}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 0.7307706, y: 0.7307706, z: 0.7307706}
+    - name: Head_C
+      parentName: reaper_game(2)(Clone)
+      position: {x: -0.0112977065, y: 0.091661915, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 16.491106, y: 19.744934, z: 16.491106}
+    - name: reaper_body1
+      parentName: reaper_game(2)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: reaper_body2
+      parentName: reaper_game(2)(Clone)
+      position: {x: -0.012146213, y: -0.047462013, z: 0.010125255}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.423216, y: 1.423216, z: 1.423216}
+    - name: transform1
+      parentName: reaper_body2
+      position: {x: 0.010576912, y: 0.11567085, z: -0.011160149}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane2
+      parentName: reaper_game(2)(Clone)
+      position: {x: -0, y: -0.05515291, z: 0.016495172}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 54.28704, y: 16.009277, z: 16.009277}
+    - name: transform2
+      parentName: pPlane2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane3
+      parentName: reaper_game(2)(Clone)
+      position: {x: -0.022943398, y: -0.20154901, z: 0.010125255}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

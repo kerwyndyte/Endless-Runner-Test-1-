@@ -12,7 +12,7 @@ public class GameOver : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        transform.Rotate(0, 90 * Time.deltaTime, 0);
+        //transform.Rotate(0, 90 * Time.deltaTime, 0);
     }
 
     private void OnTriggerEnter(Collider other)

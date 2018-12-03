@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Enemy
+  - Pickup
   layers:
   - Default
   - TransparentFX
