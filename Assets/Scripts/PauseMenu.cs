@@ -30,15 +30,19 @@ public class PauseMenu : MonoBehaviour {
 
     public void Resume()
     {
-        Time.timeScale = 1f;
+        
         pauseMenuUI.SetActive(false);
-       // StartCoroutine (Countdown());
+        Time.timeScale = 1f;
+        // StartCoroutine (Countdown(3));
         GameisPaused = false;
-
     }
 
-   /* IEnumerator Countdown()
+    /*IEnumerator Countdown(float pauseDuration)
     {
+        while (Time.realtimeSinceStartup < pauseTime)
+        {
+            yield return 0;
+        }
         txtCountdown.gameObject.SetActive(true);
         txtCountdown.text = "3";
         yield return new WaitForSeconds(1f);
@@ -47,9 +51,10 @@ public class PauseMenu : MonoBehaviour {
         txtCountdown.text = "1";
         yield return new WaitForSeconds(1f);
         txtCountdown.gameObject.SetActive(false);
-        
+        Time.timeScale = 1f;
         GameisPaused = false;
-        
+
+
     }*/
 
     void Pause()
@@ -61,6 +66,6 @@ public class PauseMenu : MonoBehaviour {
 
     public void BacktoMenuGame()
     {
-        SceneManager.LoadScene("Menu");
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }

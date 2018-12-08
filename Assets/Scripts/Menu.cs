@@ -8,16 +8,19 @@ public class Menu : MonoBehaviour {
 
     public void PlayGame()
     {
-        StartCoroutine(WaitforFade(4));
+        StartCoroutine(WaitforFade(2));
     }
 
     IEnumerator WaitforFade(float time)
     {
         yield return new WaitForSeconds(4);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Load();
     }
 
-
+    public void Load()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
     public void QuitGame()
     {

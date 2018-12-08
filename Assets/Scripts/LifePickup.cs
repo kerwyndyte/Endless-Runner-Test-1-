@@ -12,7 +12,7 @@ public class LifePickup : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		transform.Rotate (0 , 90 * Time.deltaTime, 0);
+		transform.Rotate (90 * Time.deltaTime, 0, 0);
 		
 	}
 
@@ -20,7 +20,7 @@ public class LifePickup : MonoBehaviour {
 	{
 		if (other.name == "Player") 
 		{
-			other.GetComponent<LifeCount> ().candy++;
+			other.GetComponent<LifeCount> ().lives++;
 
 			Destroy (gameObject);
 		}

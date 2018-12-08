@@ -17,7 +17,7 @@ public class LoadLevel : MonoBehaviour {
 
     IEnumerator WaitforFade(float time)
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         Load(1);
     }
 
