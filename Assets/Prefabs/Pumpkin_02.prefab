@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33891551814380434}
   - component: {fileID: 23186816916663918}
   - component: {fileID: 135278289267911550}
+  - component: {fileID: 114215098409006926}
   m_Layer: 0
   m_Name: Pumpkin_02
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1876248473295346}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.8199997, y: 0.06767845, z: -2.459999}
+  m_LocalPosition: {x: 2.46095, y: -4.2429514, z: 1.2268276}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,6 +85,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1876248473295346}
   m_Mesh: {fileID: 4300000, guid: 1c11594aafb85e3428638396d6d90b54, type: 3}
+--- !u!114 &114215098409006926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1876248473295346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5903f89dccf8a4d9b79f00ba5a9c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
 --- !u!135 &135278289267911550
 SphereCollider:
   m_ObjectHideFlags: 1

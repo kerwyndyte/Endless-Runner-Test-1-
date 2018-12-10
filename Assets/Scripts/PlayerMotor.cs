@@ -1,15 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerMotor : MonoBehaviour {
 
     private CharacterController controller;
+    //private Rigidbody rb;
+    [SerializeField]
     private Vector3 moveVector;
     public float speed = 3.0f;
     public float newSpeed;
     private float verticalVelocity = -0.5f;
     //private float gravity = 120.0f;
+    [SerializeField]
     private float animationDuration = 2.0f;
     private bool myFuncWasCalled;
     
@@ -20,6 +24,7 @@ public class PlayerMotor : MonoBehaviour {
     {
 
         controller = GetComponent<CharacterController>();
+        //rb = GetComponent<Rigidbody>()
         
         		
 	}
@@ -33,16 +38,38 @@ public class PlayerMotor : MonoBehaviour {
             controller.Move(Vector3.forward * speed * Time.deltaTime);
             return;
         }
+
         moveVector = Vector3.zero; //Reset Value
 
-        if (controller.isGrounded)
+        /*if (controller.isGrounded)
         {
             verticalVelocity = -0.5f;           
         }
         else
         {
-            return;            
+                      
+        }*/
+
+        //X - Left and Right
+        /*moveVector.x = Input.GetAxisRaw("Horizontal") * speed;
+        if (Input.GetMouseButton(0))
+        {
+            if (Input.mousePosition.x > 450 && Input.mousePosition.y < 250)
+                moveVector.x = -5;
+            else if(Input.mousePosition.x < 450 && Input.mousePosition.y < 250)
+                moveVector.x = 5;
+        }*/
+
+        moveVector.x = CrossPlatformInputManager.GetAxis("Horizontal") * 100;
+        if (CrossPlatformInputManager.GetButtonDown("LeftButton"))
+        {
+            moveVector.x = -5 * speed;
         }
+        else if (CrossPlatformInputManager.GetButtonDown("RightButton"))
+        {
+            moveVector.x = 5 * speed;
+        }
+        
 
         // Z - Forward and Backwards
         if (myFuncWasCalled)
@@ -52,28 +79,30 @@ public class PlayerMotor : MonoBehaviour {
         else
         {
             moveVector.z = speed;
+
+            
         }
 
-        // X - Left and Right
-        moveVector.x = Input.GetAxisRaw("Horizontal") * speed;
-        if (Input.GetMouseButton(0))
-        {
-            if (Input.mousePosition.x > Screen.width / 2)
-                moveVector.x = -5;
-            else
-                moveVector.x = 5;
-        }
+
 
         // Y - Up and Down
-        moveVector.y = verticalVelocity; //replace with jump animation
-                     
+        /*moveVector.y = CrossPlatformInputManager.GetAxis("Vertical") * 100;
+        {
+            if (Input.mousePosition.y > 250 && Input.mousePosition.y < 400)
+                moveVector.y = 20f;
+        }*/
+        moveVector.y = -0.5f; //replace with jump animation
+        
+
+        //Debug.Log(moveVector);
+
         controller.Move(moveVector * Time.deltaTime);
 
-		
+        		
 	}
-     
 
     
+        
     // Obstacles
     public void OnTriggerEnter(Collider other)
     {

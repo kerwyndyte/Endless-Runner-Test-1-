@@ -9,15 +9,17 @@ public class Score : MonoBehaviour
     private int difficultyLevel = 1;
     private int maxDifficultyLevel = 10;
     private int scoreToNextLevel = 20;
-    
+    public int candy = 0;
+    public Text CandyText;
     public Text timeText;
 
 	// Use this for initialization
 	void Start () {
 
         timeText.text = "0";
-		
-	}
+        CandyText.text = "0";
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -29,8 +31,9 @@ public class Score : MonoBehaviour
         }
 
         timeText.text = ((int)time).ToString();
-		
-	}
+        CandyText.text = candy.ToString();
+
+    }
 
     void LevelUp()
     {

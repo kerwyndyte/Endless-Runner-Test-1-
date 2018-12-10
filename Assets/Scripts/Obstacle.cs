@@ -22,6 +22,7 @@ public class Obstacle : MonoBehaviour {
 		if (other.tag == "Player") 
 		{
             Instantiate(particleEffect, transform.position, transform.rotation);
+            GameObject.Find("Player_Runner").GetComponent<LifeCount>().lives--;
 
             Destroy (gameObject);
 		}

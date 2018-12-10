@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1781214891117218}
   m_LocalRotation: {x: -0, y: 0.72913575, z: -0, w: 0.6843691}
-  m_LocalPosition: {x: -2.0043259, y: 0.5, z: -1.5130005}
+  m_LocalPosition: {x: -4.5708838, y: -3.0253265, z: 2.0237212}
   m_LocalScale: {x: 0.61327326, y: 0.45792365, z: 0.60083556}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 14aab981c9c35144fa64770eddf0ad1d, type: 2}
-  - {fileID: 2100002, guid: 2340a319ac38969438883e097850c3a1, type: 3}
+  - {fileID: 2100000, guid: df63cddbbbce7f34a9d239b804ee41b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5903f89dccf8a4d9b79f00ba5a9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
 --- !u!135 &135673187846570274
 SphereCollider:
   m_ObjectHideFlags: 1

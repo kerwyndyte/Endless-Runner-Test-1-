@@ -9,7 +9,7 @@ public class GameOverMenu : MonoBehaviour {
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("TestZone");
+        SceneManager.LoadScene("game");
     }
 
    

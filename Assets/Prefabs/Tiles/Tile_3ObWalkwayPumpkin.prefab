@@ -862,7 +862,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1566157292308828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.8081093, y: -1.018945, z: 8.849425}
+  m_LocalPosition: {x: 24.74609, y: 9.863844, z: 3.1702452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4542956380214802}
@@ -1433,6 +1433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5903f89dccf8a4d9b79f00ba5a9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffect: {fileID: 1000010715882420, guid: 14d81e2c407975245973a11cdfbeb902,
+    type: 2}
 --- !u!114 &114444906441389192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1444,6 +1446,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5903f89dccf8a4d9b79f00ba5a9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffect: {fileID: 1000010715882420, guid: 14d81e2c407975245973a11cdfbeb902,
+    type: 2}
 --- !u!114 &114724306599037148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1455,6 +1459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5903f89dccf8a4d9b79f00ba5a9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffect: {fileID: 1000010715882420, guid: 14d81e2c407975245973a11cdfbeb902,
+    type: 2}
 --- !u!135 &135297398963657856
 SphereCollider:
   m_ObjectHideFlags: 1
