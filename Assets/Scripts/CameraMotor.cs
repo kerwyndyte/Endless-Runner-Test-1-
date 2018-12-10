@@ -42,7 +42,7 @@ public class CameraMotor : MonoBehaviour
             transform.LookAt(lookAt.position + Vector3.up);
         }
 
-        //transform.position = moveVector;
+        transform.position = moveVector;
 		
 	}
 }

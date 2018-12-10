@@ -13,7 +13,7 @@ public class LifeCount : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        GameOver.gameObject.SetActive(false);
+        GameOver.gameObject.SetActive(true);
         Time.timeScale = 1f;
     }
 	
@@ -25,6 +25,7 @@ public class LifeCount : MonoBehaviour {
             GameOver.gameObject.SetActive(true);
             Time.timeScale = 0f;
             GameisPaused = true;
+            
         }
 
         
@@ -33,6 +34,6 @@ public class LifeCount : MonoBehaviour {
 
 	private void OnGUI()
 	{
-		GUI.Label(new Rect(10, 10, 100, 50), "Lives : " + lives); 
+		GUI.Label(new Rect(10, 30, 100, 50), "Candy: " + lives); 
 	}
 }

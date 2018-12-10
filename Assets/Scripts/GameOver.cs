@@ -12,14 +12,16 @@ public class GameOver : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        transform.Rotate(0, 90 * Time.deltaTime, 0);
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Player")
+        if (other.tag == "Player")
         {
-            other.GetComponent<LifeCount>().lives = 0;
+            other.GetComponent<LifeCount>().lives = 0; //Sets Lives to 0 (which triggers the pause)
+            other.GetComponent<PlayerMotor>().SetSpeed(0); // Sets speed to 0
+            GetComponent<ReaperMotor>().SetSpeed(0); // 
 
             Destroy(gameObject);
         }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LifePickup : MonoBehaviour {
 
+    public GameObject particleEffect;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,15 +15,17 @@ public class LifePickup : MonoBehaviour {
 	void Update () {
 
 		transform.Rotate (90 * Time.deltaTime, 0, 0);
-		
+        
 	}
 
 	private void OnTriggerEnter (Collider other)
 	{
-		if (other.name == "Player") 
+		if (other.tag == "Player") 
 		{
-			other.GetComponent<LifeCount> ().lives++;
+            Instantiate(particleEffect, transform.position, transform.rotation);
 
+            other.GetComponent<LifeCount> ().lives++;
+            
 			Destroy (gameObject);
 		}
 

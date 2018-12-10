@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject particleEffect;
+
+    // Use this for initialization
+    void Start () {
 
 	}
 
@@ -17,9 +19,11 @@ public class Obstacle : MonoBehaviour {
 
 	private void OnTriggerEnter (Collider other)
 	{
-		if (other.name == "Player") 
+		if (other.tag == "Player") 
 		{
-			Destroy (gameObject);
+            Instantiate(particleEffect, transform.position, transform.rotation);
+
+            Destroy (gameObject);
 		}
 	}
 }

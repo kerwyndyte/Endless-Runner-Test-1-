@@ -305,11 +305,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4654051273295550}
-  - component: {fileID: 95572102695639250}
   - component: {fileID: 143640539403288026}
-  - component: {fileID: 114890480838802810}
-  - component: {fileID: 114284527268506138}
-  - component: {fileID: 114334510916144080}
+  - component: {fileID: 114637909139888472}
+  - component: {fileID: 136171585886010886}
+  - component: {fileID: 114167431392228044}
+  - component: {fileID: 114224793543532238}
   m_Layer: 0
   m_Name: Player_Runner
   m_TagString: Player
@@ -802,8 +802,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670672533444174}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4918995209435542}
@@ -816,7 +816,7 @@ Transform:
   - {fileID: 4941657835133294}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4695394092295844
 Transform:
   m_ObjectHideFlags: 1
@@ -915,25 +915,20 @@ Transform:
   m_Father: {fileID: 4654051273295550}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &95572102695639250
-Animator:
-  serializedVersion: 3
+--- !u!114 &114167431392228044
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670672533444174}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a04908792baf8b043b1a50e2d708b379, type: 3}
-  m_Controller: {fileID: 9100000, guid: 0f51bb9111ea9a04b8e7256a0bd52264, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114284527268506138
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa615b592e2afd94890c2722a80ed137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
+  GameOver: {fileID: 0}
+--- !u!114 &114224793543532238
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -945,7 +940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 0}
---- !u!114 &114334510916144080
+--- !u!114 &114637909139888472
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -958,20 +953,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   newSpeed: 0
---- !u!114 &114890480838802810
-MonoBehaviour:
+--- !u!136 &136171585886010886
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670672533444174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0b8ade7307a36a4aa4211594fb06e50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lives: 3
-  candy: 0
-  GameOver: {fileID: 0}
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137079514361608636
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -988,10 +982,10 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: a04908792baf8b043b1a50e2d708b379, type: 3}
-  - {fileID: 2100002, guid: a04908792baf8b043b1a50e2d708b379, type: 3}
-  - {fileID: 2100004, guid: a04908792baf8b043b1a50e2d708b379, type: 3}
-  - {fileID: 2100006, guid: a04908792baf8b043b1a50e2d708b379, type: 3}
-  - {fileID: 2100008, guid: a04908792baf8b043b1a50e2d708b379, type: 3}
+  - {fileID: 2100000, guid: 0cad1a85e8991564ca15aaa88a240056, type: 2}
+  - {fileID: 2100000, guid: 099936dd88b4baf40b0e0e0b2c6efb28, type: 2}
+  - {fileID: 2100000, guid: f7aa09e843bca3242a98d1b4e26cbc35, type: 2}
+  - {fileID: 2100000, guid: 19cfe446a4730704e9ce64fa911e33f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
