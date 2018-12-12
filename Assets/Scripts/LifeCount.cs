@@ -12,7 +12,7 @@ public class LifeCount : MonoBehaviour {
     public GameObject Heart1;
     public GameObject Heart2;
     public GameObject Heart3;
-    
+
 
 
     public static bool GameisPaused = false;
@@ -30,65 +30,44 @@ public class LifeCount : MonoBehaviour {
     {
         if (lives <= 0)
         {
+            PlayerPrefs.SetFloat("Highscore", GetComponent<Score>().time);
             GameOver.gameObject.SetActive(true);
             Time.timeScale = 0f;
             GameisPaused = true;
+            
 
+        }
+    }
+
+    
+
+    public void LivesDown()
+    {
+        if (lives == 2) //&& GetComponent<Score>().candy <= 100)
+        {
+            Heart3.gameObject.SetActive(false);
+            Debug.Log("LifeDown");
+            return;
+        }
+
+        if (lives == 1) //&& Heart2.gameObject == (true) && GetComponent<Score>().candy <= 100)
+        {
+                      
+           Heart2.gameObject.SetActive(false);
+            Debug.Log("LifeDown");
+            return;
+
+        }
+
+        else if (lives == 0)
+        {
+            Heart1.gameObject.SetActive(false);
+            return;
             
         }
 
 
-        if(GetComponent<Score>().candy == 100)
-        {
-            LivesUp();
-        }
-
-        LivesDown();
-        
-        
-        
-
-    }
-
-    private void LivesUp()
-    {
-        if (lives == 1)
-        {
-            if (Heart1.gameObject == (true) && Heart2.gameObject == (false) && Heart3.gameObject == (false))
-            {
-                Heart2.gameObject.SetActive(true);
-            }
-        }
-        else if (lives == 2)
-        {
-            if (Heart1.gameObject == (true) && Heart2.gameObject == (true) && Heart3.gameObject == (false))
-            {
-                Heart3.gameObject.SetActive(true);
-            }
-        }
-        
-    }
-
-    private void LivesDown()
-    {
-        if (lives == 2)
-        {
-            if (Heart1.gameObject == (true) && Heart2.gameObject == (true) && Heart3.gameObject == (true))
-            {
-                Heart3.gameObject.SetActive(false);
-            }
-        }
-        else if (lives == 1)
-        {
-            if (Heart1.gameObject == (true) && Heart2.gameObject == (true) && Heart3.gameObject == (false))
-            {
-                Heart2.gameObject.SetActive(false);
-            }
-        }
-        else if (lives < 1)
-        {
-            Heart1.gameObject.SetActive(false);
-        }
+        return;
     }
        
 

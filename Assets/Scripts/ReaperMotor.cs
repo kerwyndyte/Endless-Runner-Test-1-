@@ -6,7 +6,7 @@ public class ReaperMotor : MonoBehaviour {
     private CharacterController controller;
     private Vector3 moveVector;
 
-    public float speed = 3.0f;
+    public float speed = 2.0f;
     public float newSpeed;
     private float animationDuration = 2.0f;
 
@@ -46,6 +46,6 @@ public class ReaperMotor : MonoBehaviour {
     public void SetSpeed(float modifier)
     {
         myFuncWasCalled = true;
-        newSpeed = 3.0f + modifier;
+        newSpeed = speed + modifier;
     }
 }
