@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 143003282283179178}
   - component: {fileID: 65207249476092848}
   - component: {fileID: 114628527297840674}
-  - component: {fileID: 114157852402426574}
   m_Layer: 0
   m_Name: reaper_ting
   m_TagString: Enemy
@@ -494,17 +493,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: -10, z: 0}
---- !u!114 &114157852402426574
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1481202192664498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 402b2d6655982ab4e833f0283d848a18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114628527297840674
 MonoBehaviour:
   m_ObjectHideFlags: 1

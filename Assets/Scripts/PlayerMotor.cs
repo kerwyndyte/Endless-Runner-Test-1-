@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.Audio;
 
 public class PlayerMotor : MonoBehaviour {
 
@@ -16,7 +17,9 @@ public class PlayerMotor : MonoBehaviour {
     [SerializeField]
     private float animationDuration = 2.0f;
     private bool myFuncWasCalled;
-    
+    public AudioClip PowerUp;
+    public AudioSource MusicSource;
+
 
 
     // Use this for initialization
@@ -25,9 +28,10 @@ public class PlayerMotor : MonoBehaviour {
 
         controller = GetComponent<CharacterController>();
         //rb = GetComponent<Rigidbody>()
-        
-        		
-	}
+        MusicSource.clip = PowerUp;
+
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -99,10 +103,10 @@ public class PlayerMotor : MonoBehaviour {
             
         }
 
-        /*if (other.tag == "Enemy")
+        if (other.tag == "Pickup")
         {
-            
-        }*/
+            MusicSource.Play();
+        }
     }
 
     // Reset Speed
