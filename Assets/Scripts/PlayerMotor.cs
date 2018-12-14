@@ -7,13 +7,13 @@ using UnityEngine.Audio;
 public class PlayerMotor : MonoBehaviour {
 
     private CharacterController controller;
-    //private Rigidbody rb;
+    
     [SerializeField]
     private Vector3 moveVector;
     public float speed = 2.0f;
     public float newSpeed;
     private float verticalVelocity = -0.5f;
-    //private float gravity = 120.0f;
+    
     [SerializeField]
     private float animationDuration = 2.0f;
     private bool myFuncWasCalled;
@@ -27,7 +27,6 @@ public class PlayerMotor : MonoBehaviour {
     {
 
         controller = GetComponent<CharacterController>();
-        //rb = GetComponent<Rigidbody>()
         MusicSource.clip = PowerUp;
 
 
@@ -138,5 +137,5 @@ public class PlayerMotor : MonoBehaviour {
     {
         myFuncWasCalled = true;
         newSpeed = speed + modifier;
-    }
+    }   
 }

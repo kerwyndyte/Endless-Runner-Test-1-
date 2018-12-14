@@ -23,7 +23,7 @@ public class TileManager : MonoBehaviour
         {
             if (i < 4)
             {
-                SpawnTile(0); //Spawn First Index for the 2 first tiles
+                SpawnTile(0); //Spawn First Index for the 4 first tiles
             }
             else
             {
