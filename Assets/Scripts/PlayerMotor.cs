@@ -67,9 +67,7 @@ public class PlayerMotor : MonoBehaviour {
             moveVector.z = speed;
         }
 
-
-
-        
+                       
         moveVector.y = -0.5f; //replace with jump animation
         
 
@@ -85,24 +83,22 @@ public class PlayerMotor : MonoBehaviour {
     // Obstacles
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Obstacle")
+        if (other.CompareTag("Obstacle"))
         {
             if(myFuncWasCalled)
             {
-                newSpeed--;
-                newSpeed--;
+                newSpeed = newSpeed - 2;
                 StartCoroutine(ObstacleTimer(3));
             }
             else
             {
-                speed--;
-                speed--;
+                speed = speed - 2;
                 StartCoroutine(ObstacleTimer(3));
             }
             
         }
 
-        if (other.tag == "Pickup")
+        if (other.CompareTag("Pickup"))
         {
             MusicSource.Play();
         }
@@ -120,14 +116,14 @@ public class PlayerMotor : MonoBehaviour {
         if(myFuncWasCalled)
         {
             yield return new WaitForSeconds(3);
-            newSpeed++;
-            newSpeed++;
+            newSpeed = newSpeed + 2;
+            
         }
         else
         {
             yield return new WaitForSeconds(3);
-            speed++;
-            speed++;
+            speed = speed + 2;
+    
         }
         
         

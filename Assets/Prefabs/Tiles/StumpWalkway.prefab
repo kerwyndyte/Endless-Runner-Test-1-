@@ -77,7 +77,6 @@ GameObject:
   - component: {fileID: 23466327463338912}
   - component: {fileID: 114216951690954748}
   - component: {fileID: 65894895540674792}
-  - component: {fileID: 114227256018498328}
   m_Layer: 0
   m_Name: YELLOW SWEET (12)
   m_TagString: Pickup
@@ -97,7 +96,6 @@ GameObject:
   - component: {fileID: 23424667146420138}
   - component: {fileID: 114393039790819326}
   - component: {fileID: 65648569676065224}
-  - component: {fileID: 114131669439097728}
   m_Layer: 0
   m_Name: YELLOW SWEET (1)
   m_TagString: Pickup
@@ -153,7 +151,6 @@ GameObject:
   - component: {fileID: 23353430266910726}
   - component: {fileID: 114105485094369334}
   - component: {fileID: 65736655422201484}
-  - component: {fileID: 114107545777574516}
   m_Layer: 0
   m_Name: YELLOW SWEET (2)
   m_TagString: Pickup
@@ -173,7 +170,6 @@ GameObject:
   - component: {fileID: 23779063969709882}
   - component: {fileID: 114033559387867976}
   - component: {fileID: 65984204897588402}
-  - component: {fileID: 114072939802252850}
   m_Layer: 0
   m_Name: YELLOW SWEET
   m_TagString: Pickup
@@ -193,7 +189,6 @@ GameObject:
   - component: {fileID: 23571119531179294}
   - component: {fileID: 114174679690814592}
   - component: {fileID: 65534392272279124}
-  - component: {fileID: 114179650863798356}
   m_Layer: 0
   m_Name: YELLOW SWEET (4)
   m_TagString: Pickup
@@ -254,7 +249,7 @@ GameObject:
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1455559592547734
 GameObject:
@@ -268,7 +263,6 @@ GameObject:
   - component: {fileID: 23252759622733654}
   - component: {fileID: 114238547945977034}
   - component: {fileID: 65944757573927482}
-  - component: {fileID: 114830141959658342}
   m_Layer: 0
   m_Name: YELLOW SWEET (7)
   m_TagString: Pickup
@@ -288,7 +282,6 @@ GameObject:
   - component: {fileID: 23095358240523888}
   - component: {fileID: 114059549036160462}
   - component: {fileID: 65540027028294068}
-  - component: {fileID: 114300350187931780}
   m_Layer: 0
   m_Name: YELLOW SWEET (11)
   m_TagString: Pickup
@@ -326,7 +319,6 @@ GameObject:
   - component: {fileID: 23547679227227268}
   - component: {fileID: 114520278253464886}
   - component: {fileID: 65478990703246112}
-  - component: {fileID: 114676528918351954}
   m_Layer: 0
   m_Name: YELLOW SWEET (10)
   m_TagString: Pickup
@@ -350,7 +342,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1648490759601590
 GameObject:
@@ -365,7 +357,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1672064190117048
 GameObject:
@@ -415,7 +407,6 @@ GameObject:
   - component: {fileID: 23314391225143702}
   - component: {fileID: 114891033770218000}
   - component: {fileID: 65472718379315516}
-  - component: {fileID: 114906068155028810}
   m_Layer: 0
   m_Name: YELLOW SWEET (6)
   m_TagString: Pickup
@@ -436,7 +427,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1758919154866232
 GameObject:
@@ -450,7 +441,6 @@ GameObject:
   - component: {fileID: 23333435854286870}
   - component: {fileID: 114414171493867722}
   - component: {fileID: 65225125947584426}
-  - component: {fileID: 114100313282185594}
   m_Layer: 0
   m_Name: YELLOW SWEET (5)
   m_TagString: Pickup
@@ -470,7 +460,6 @@ GameObject:
   - component: {fileID: 23336636297688512}
   - component: {fileID: 114610034573054630}
   - component: {fileID: 65342176405845068}
-  - component: {fileID: 114267228050269524}
   m_Layer: 0
   m_Name: YELLOW SWEET (3)
   m_TagString: Pickup
@@ -526,7 +515,6 @@ GameObject:
   - component: {fileID: 23061122566565418}
   - component: {fileID: 114856740541919618}
   - component: {fileID: 65042063266893712}
-  - component: {fileID: 114910078042267358}
   m_Layer: 0
   m_Name: YELLOW SWEET (14)
   m_TagString: Pickup
@@ -546,7 +534,6 @@ GameObject:
   - component: {fileID: 23812267151720316}
   - component: {fileID: 114990893088285454}
   - component: {fileID: 65762724526552962}
-  - component: {fileID: 114954165117992914}
   m_Layer: 0
   m_Name: YELLOW SWEET (13)
   m_TagString: Pickup
@@ -566,7 +553,6 @@ GameObject:
   - component: {fileID: 23014670052399082}
   - component: {fileID: 114748684806296580}
   - component: {fileID: 65829145017747030}
-  - component: {fileID: 114756426355223318}
   m_Layer: 0
   m_Name: YELLOW SWEET (9)
   m_TagString: Pickup
@@ -586,7 +572,6 @@ GameObject:
   - component: {fileID: 23636808337837998}
   - component: {fileID: 114474786238484134}
   - component: {fileID: 65253408119621964}
-  - component: {fileID: 114853705104382432}
   m_Layer: 0
   m_Name: YELLOW SWEET (8)
   m_TagString: Pickup
@@ -2648,40 +2633,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
     type: 2}
---- !u!114 &114072939802252850
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1347728603528124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
---- !u!114 &114100313282185594
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1758919154866232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
 --- !u!114 &114105485094369334
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2695,40 +2646,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
     type: 2}
---- !u!114 &114107545777574516
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1327446666407740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
---- !u!114 &114131669439097728
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1180666716132202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
 --- !u!114 &114174679690814592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2742,23 +2659,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
     type: 2}
---- !u!114 &114179650863798356
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1379611641191284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
 --- !u!114 &114216951690954748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2772,23 +2672,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
     type: 2}
---- !u!114 &114227256018498328
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1140030564769314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
 --- !u!114 &114238547945977034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2802,40 +2685,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
     type: 2}
---- !u!114 &114267228050269524
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1768260902721324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
---- !u!114 &114300350187931780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1471078523854540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
 --- !u!114 &114393039790819326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2901,23 +2750,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
     type: 2}
---- !u!114 &114676528918351954
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1559285887146828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
 --- !u!114 &114717530966618708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2944,57 +2776,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
     type: 2}
---- !u!114 &114756426355223318
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1935533913384618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
---- !u!114 &114830141959658342
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1455559592547734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
---- !u!114 &114853705104382432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1949720333122488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
 --- !u!114 &114856740541919618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3021,57 +2802,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
     type: 2}
---- !u!114 &114906068155028810
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1741700048065412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
---- !u!114 &114910078042267358
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1838557800566662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
---- !u!114 &114954165117992914
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1906368444976696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
 --- !u!114 &114990893088285454
 MonoBehaviour:
   m_ObjectHideFlags: 1

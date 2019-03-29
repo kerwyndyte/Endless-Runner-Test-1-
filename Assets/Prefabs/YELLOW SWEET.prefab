@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23842778106729174}
   - component: {fileID: 114730180763855748}
   - component: {fileID: 65710096347382264}
-  - component: {fileID: 114137385094993348}
   - component: {fileID: 82522264886802592}
   m_Layer: 0
   m_Name: YELLOW SWEET
@@ -195,23 +194,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114137385094993348
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1055711067180304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1742909100, guid: ed7343f30e3843b3afda8f8b02669cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
 --- !u!114 &114730180763855748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,5 +207,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
     type: 2}
-  MainMenuMusic: {fileID: 8300000, guid: f7bae1019853e6c41b561ce868721d70, type: 3}
-  MusicSource: {fileID: 82522264886802592}
